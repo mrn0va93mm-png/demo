@@ -229,90 +229,86 @@
         </div>
     </div>
 </section>
-
 <section class="contact-section section-padding" id="section_5">
     <div class="container">
         <div class="row">
 
             <div class="col-lg-5 col-12">
-               <form action="https://docs.google.com/forms/d/e/1FAIpQLSfWLrAdYxrtlX2fkt3L2MnQv1wztcwF4YbaKFOQ4m27z1spHw/formResponse" 
-      method="post" 
-      class="custom-form contact-form" 
-      role="form"
-      onsubmit="setTimeout(function(){alert('Your project request has been submitted successfully!');}, 500);this.reset();">     
+                <form action="#" method="post" class="custom-form contact-form" role="form">
                     <h2 class="mb-4 pb-2">Contact NDyo</h2>
 
                     <div class="row">
+
+                        <!-- Full Name -->
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="form-floating">
-                                <input type="text" name="entry.654864903" id="full-name" class="form-control" placeholder="Full Name" required="">
-                                <label for="full-name">Full Name *</label>
+                                <input type="text" name="full-name" id="full-name" class="form-control" placeholder="Full Name" required>
+                                <label for="full-name">Full Name</label>
                             </div>
                         </div>
 
-                        <div class="col-lg-6 col-md-6 col-12"> 
+                        <!-- Email -->
+                        <div class="col-lg-6 col-md-6 col-12">
                             <div class="form-floating">
-                                <input type="email" name="entry.537267574" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
-                                <label for="email">Email address *</label>
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Email address" required>
+                                <label for="email">Email address</label>
                             </div>
                         </div>
 
+                        <!-- Mandatory Service -->
                         <div class="col-lg-12 col-12 mt-3">
-                            <label for="mandatory-service" class="form-label">Mandatory Service *</label>
-                            <select class="form-select form-control" id="mandatory-service" name="entry.1512447373" required>
-                                <option value="" disabled selected>Select Mandatory Service</option>
+                            <label class="form-label">Mandatory Service*</label>
+                            <select id="mandatory-service" class="form-control" required>
+                                <option value="">-- Choose One --</option>
                                 <option value="Base Bundle">Base Bundle</option>
                             </select>
                         </div>
 
-                        <div class="col-lg-6 col-md-6 col-12 mt-3">
-                            <div class="form-floating">
-                                <input type="number" name="entry.2107137707" id="extra-page" class="form-control" placeholder="No Of Extra Page" min="0" value="0" required>
-                                <label for="extra-page">No Of Extra Page *</label>
-                            </div>
+                        <!-- Add-on Services Checkboxes -->
+                        <div class="col-lg-12 col-12 mt-3">
+                            <label class="form-label">Add-On Services</label><br>
+
+                            <input type="checkbox" class="addon" value="Contact Form + Email Alert ₹600"> Contact Form + Email Alert ₹600 <br>
+                            <input type="checkbox" class="addon" value="Resume Download Button ₹400"> Resume Download Button ₹400 <br>
+                            <input type="checkbox" class="addon" value="Custom Domain + DNS + SSL ₹1,500"> Custom Domain + DNS + SSL ₹1,500 <br>
+                            <input type="checkbox" class="addon" value="Extra Page ₹1,000 / page"> Extra Page ₹1,000 / page <br>
                         </div>
 
-                        <div class="col-lg-6 col-md-6 col-12 mt-3">
-                            <label class="form-label d-block">Add-On Services</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="entry.870149719" value="Contact+Form+%2B+Email+Alert+%E2%82%B9600" id="addon-contact">
-                                <label class="form-check-label" for="addon-contact">Contact Form + Email Alert ₹600</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="entry.870149719" value="Resume+Download+Button+%E2%82%B9400" id="addon-resume">
-                                <label class="form-check-label" for="addon-resume">Resume Download Button ₹400</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="entry.870149719" value="Custom+Domain+%2B+DNS+%2B+SSL+%E2%82%B91%2C500" id="addon-domain">
-                                <label class="form-check-label" for="addon-domain">Custom Domain + DNS + SSL ₹1,500</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" name="entry.870149719" value="Extra+Page+%E2%82%B91%2C000+%2F+page" id="addon-extra">
-                                <label class="form-check-label" for="addon-extra">Extra Page ₹1,000 / page</label>
-                            </div>
-                        </div>
-                        
+                        <!-- Extra Page Count -->
                         <div class="col-lg-12 col-12 mt-3">
                             <div class="form-floating">
-                                <textarea class="form-control" id="message" name="entry.1249186442" placeholder="Describe message here" required style="height: 100px;"></textarea>
-                                <label for="message">Project Description *</label>
+                                <input type="number" id="extra-pages" class="form-control" min="0" placeholder="No Of Extra Page">
+                                <label for="extra-pages">No Of Extra Pages</label>
                             </div>
-
-                            <button type="submit" class="form-control mt-4">Submit Request</button>
                         </div>
+
+                        <!-- Message / Project Description -->
+                        <div class="col-lg-12 col-12 mt-3">
+                            <div class="form-floating">
+                                <textarea class="form-control" id="message" name="message" placeholder="Describe message here" maxlength="500"></textarea>
+                                <label for="message">Project Description</label>
+                            </div>
+                        </div>
+
+                        <!-- Submit -->
+                        <div class="col-lg-12 col-12 mt-3">
+                            <button type="submit" class="form-control btn btn-primary">Submit Form</button>
+                        </div>
+
                     </div>
                 </form>
             </div>
 
             <div class="col-lg-6 col-12">
                 <div class="contact-info mt-5">
-                    <img src="images/WorldMap.svg" class="img-fluid" alt="World Map">
+                    <img src="images/WorldMap.svg" class="img-fluid" alt="">
                 </div>
             </div>
 
         </div>
     </div>
 </section>
+
 </main>
 
     <footer class="site-footer">
@@ -410,6 +406,48 @@ window.addEventListener('scroll', () => {
 </script>
 
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+   <script>
+document.querySelector(".contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("full-name").value;
+    const email = document.getElementById("email").value;
+    const mandatoryService = document.getElementById("mandatory-service").value;
+    const message = document.getElementById("message").value;
+    const extraPages = document.getElementById("extra-pages").value;
+
+    // Collect selected add-ons
+    const addons = [...document.querySelectorAll(".addon:checked")]
+        .map(el => el.value)
+        .join(", ");
+
+    const googleFormURL = "https://docs.google.com/forms/d/e/1FAIpQLSfWLrAdYxrtlX2fkt3L2MnQv1wztcwF4YbaKFOQ4m27z1spHw/formResponse?";
+
+    const formData =
+        "entry.654864903=" + encodeURIComponent(name) +
+        "&entry.537267574=" + encodeURIComponent(email) +
+        "&entry.1512447373=" + encodeURIComponent(mandatoryService) +
+        "&entry.870149719=" + encodeURIComponent(addons) +
+        "&entry.2107137707=" + encodeURIComponent(extraPages) +
+        "&entry.1249186442=" + encodeURIComponent(message);
+
+    fetch(googleFormURL + formData, {
+        method: "POST",
+        mode: "no-cors"
+    })
+    .then(() => {
+        alert("🔥 Thanks! Your request has been submitted!");
+        document.querySelector(".contact-form").reset();
+    })
+    .catch(err => {
+        alert("Error da! Try again later!");
+        console.error(err);
+    });
+
+});
+</script>
+
+
     </body>
 </html>
-
