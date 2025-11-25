@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>NDyo - Services/Portfolio</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/templatemo-tiya-golf-club.css" rel="stylesheet">
+        
+    </head>
+    
+    <body>
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">                 
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img src="images/logoo.PNG" class="navbar-brand-image img" alt="Tiya Golf Club">
+                        <span class="navbar-brand-text">
+                            
+                            <small></small>
+                        </span>
+                    </a>
+
+                    <div class="d-lg-none ms-auto me-3">
+                        <a class="btn custom-btn custom-border-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Member Login</a>
+                    </div>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_1">Home</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_2">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_3">Services</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_4">Pricing Plans</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="#section_5">Contact Us</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Schedule</a>
+
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="event-listing.html">Services</a></li>
+
+                                    <li><a class="dropdown-item" href="event-detail.html">Work Process</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        
+                    </div>
+                </div>
+            </nav>
+
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">                 
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Member Login</h5>
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                
+                <div class="offcanvas-body d-flex flex-column">
+                    <form class="custom-form member-login-form" action="#" method="post" role="form">
+
+                        <div class="member-login-form-body">
+                            <div class="mb-4">
+                                <label class="form-label mb-2" for="member-login-number">Membership No.</label>
+
+                                <input type="text" name="member-login-number" id="member-login-number" class="form-control" placeholder="11002560" required>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label mb-2" for="member-login-password">Password</label>
+
+                                <input type="password" name="member-login-password" id="member-login-password" pattern="[0-9a-zA-Z]{4,10}" class="form-control" placeholder="Password" required="">
+                            </div>
+
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Remember me
+                                </label>
+                            </div>
+
+                            <div class="col-lg-5 col-md-7 col-8 mx-auto">
+                                <button type="submit" class="form-control">Login</button>
+                            </div>
+
+                            <div class="text-center my-4">
+                                <a href="#">Forgotten password?</a>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="mt-auto mb-5">
+                        <p>
+                            <strong class="text-white me-3">Any Questions?</strong>
+
+                            <a href="tel: 010-020-0340" class="contact-link">
+                                010-020-0340
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3D405B" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+            </div>
+            
+
+            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+
+                <div class="section-overlay"></div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3D405B" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                            <h2 class="text-white">Welcome to the Work Space</h2>
+
+                            <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
+                                <span>NDyo is</span>
+                                <span class="cd-words-wrapper">
+                                    <b class="is-visible">Modern</b>
+                                    <b>Creative</b>
+                                    <b>Lifestyle</b>
+                                </span>
+                            </h1>
+
+                            <div class="custom-btn-group">
+                                <a href="#section_2" class="btn custom-btn smoothscroll me-3">Our Story</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="ratio ratio-16x9">
+                                <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+            </section>
+
+<section class="membership-section section-padding" id="section_3">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-12 col-12 text-center mx-auto mb-lg-5 mb-4">
+                <h2><span></span> Portfolio / Personal Website</h2>
+            </div>
+
+            <div class="col-lg-6 col-12 mb-3 mb-lg-0">
+                <h4 class="mb-4 pb-lg-2">Base Bundle</h4>
+
+                <div class="table-responsive">
+                    <table class="table text-center">
+                        <thead>
+                            <tr>
+                                <th>Base Features</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><th class="text-start">3 Responsive Pages (Home, About, Projects)</th></tr>
+                            <tr><th class="text-start">Free Hosting Setup</th></tr>
+                            <tr><th class="text-start">Mobile Friendly UI</th></tr>
+                            <tr><th class="text-start">Basic Animations</th></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-12 mx-auto">
+                <h4 class="mb-4 pb-lg-2">Add-On Services</h4>
+                <div class="table-responsive">
+                    <table class="table text-center">
+                        <thead>
+                            <tr>
+                                <th>Add-On</th>
+                                <th>Pricing</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><th class="text-start">Extra Page</th><td><i>₹1,000 / page</i></td></tr>
+                            <tr><th class="text-start">Contact Form + Email Alert</th><td><i>₹600</i></td></tr>
+                            <tr><th class="text-start">Resume Download Button</th><td><i>₹400</i></td></tr>
+                            <tr><th class="text-start">Custom Domain + DNS + SSL</th><td><i>₹1,500</i></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+
+<section class="contact-section section-padding" id="section_5">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-5 col-12">
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfWLrAdYxrtlX2fkt3L2MnQv1wztcwF4YbaKFOQ4m27z1spHw/formResponse" 
+                      method="post" 
+                      class="custom-form contact-form" 
+                      role="form"
+                      target="hidden_iframe"
+                      onsubmit="setTimeout(function(){alert('Your project request has been submitted successfully!');}, 500);this.reset();">
+                    
+                    <h2 class="mb-4 pb-2">Contact NDyo</h2>
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="form-floating">
+                                <input type="text" name="entry.1763995274" id="full-name" class="form-control" placeholder="Full Name" required="">
+                                <label for="full-name">Full Name *</label>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-12"> 
+                            <div class="form-floating">
+                                <input type="email" name="entry.852633000" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
+                                <label for="email">Email address *</label>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-12 mt-3">
+                            <label for="mandatory-service" class="form-label">Mandatory Service *</label>
+                            <select class="form-select form-control" id="mandatory-service" name="entry.45681910" required>
+                                <option value="" disabled selected>Select Mandatory Service</option>
+                                <option value="Base Bundle">Base Bundle</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-12 mt-3">
+                            <div class="form-floating">
+                                <input type="number" name="entry.45662509" id="extra-page" class="form-control" placeholder="No Of Extra Page" min="0" value="0" required>
+                                <label for="extra-page">No Of Extra Page *</label>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-12 mt-3">
+                            <label class="form-label d-block">Add-On Services</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="entry.45734887" value="Contact+Form+++Email+Alert+%E2%82%B9600" id="addon-contact">
+                                <label class="form-check-label" for="addon-contact">Contact Form + Email Alert ₹600</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="entry.45734887" value="Resume+Download+Button+%E2%82%B9400" id="addon-resume">
+                                <label class="form-check-label" for="addon-resume">Resume Download Button ₹400</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="entry.45734887" value="Custom+Domain+++DNS+++SSL+%E2%82%B91%2C500" id="addon-domain">
+                                <label class="form-check-label" for="addon-domain">Custom Domain + DNS + SSL ₹1,500</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="entry.45734887" value="Extra+Page+%E2%82%B91%2C000+%2F+page" id="addon-extra">
+                                <label class="form-check-label" for="addon-extra">Extra Page ₹1,000 / page</label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-12 col-12 mt-3">
+                            <div class="form-floating">
+                                <textarea class="form-control" id="message" name="entry.45734741" placeholder="Describe message here" required style="height: 100px;"></textarea>
+                                <label for="message">Project Description *</label>
+                            </div>
+
+                            <button type="submit" class="form-control mt-4">Submit Request</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-lg-6 col-12">
+                <div class="contact-info mt-5">
+                    <img src="images/WorldMap.svg" class="img-fluid" alt="World Map">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+</main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-12 me-auto mb-5 mb-lg-0">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img src="images/logoo.PNG" class="navbar-brand-image img" alt="">
+                        <span class="navbar-brand-text">
+                            
+                            <small></small>
+                        </span>
+                    </a>
+                </div>
+
+                    <div class="col-lg-6 col-12">
+            <h3>Privacy Policy</h3>
+            <p>
+                We collect only essential information such as name, email, and message 
+                through our contact forms. Your data will be used only for communication 
+                and service purposes. We do not sell or share your information with 
+                any third party.
+            </p>
+        </div>
+
+        <div class="col-lg-6 col-12">
+            <h3>Terms & Conditions</h3>
+            <p>
+                By accessing NDYO services, you agree to follow our service terms. 
+                Payments must be made as per the agreed plan. Refunds will not be issued 
+                once the project work has begun. For any clarifications, contact us 
+                through our business email.
+            </p>
+        </div>
+
+    </div>
+</div>
+                    
+                    <p style="text-align: center;">© 2025 NDYO. All rights reserved.</p>
+
+                    </div>
+
+                        <div class="col-lg-2 col-12 ms-auto">
+                            <ul class="social-icon mt-lg-5 mt-3 mb-4">
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-instagram"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-twitter"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-whatsapp"></a>
+                                </li>
+                            </ul>
+                            <p class="copyright-text">Design: <a rel="nofollow" href="https://ndyo.in" target="_blank">NDyo</a></p>
+                            
+                        </div>
+
+                </div>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#81B29A" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+    </footer>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/animated-headline.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/custom.js"></script>
+<script>
+let lastScroll = 0;
+const nav = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+    let currentScroll = window.pageYOffset;
+
+    if (currentScroll > lastScroll) {
+        // scrolling down → hide
+        nav.classList.add('hide');
+        nav.classList.remove('show');
+    } else {
+        // scrolling up → show
+        nav.classList.add('show');
+        nav.classList.remove('hide');
+    }
+
+    lastScroll = currentScroll;
+});
+</script>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+    </body>
+</html>
